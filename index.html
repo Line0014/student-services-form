@@ -1,23 +1,134 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Student Services Registration Portal</title>
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <h1>Student Services Registration Portal</h1>
-    </header>
-    <main></main>
-  </body>
-</html>
+<main>
+  <form class="registration-form" action="#" method="post">
+    <fieldset class="registration-form__section">
+      <legend>Student Information</legend>
+
+      <div class="registration-form__field">
+        <label for="studentName">Full name</label>
+        <input
+          type="text"
+          id="studentName"
+          name="studentName"
+          placeholder="e.g. Alex Morgan"
+          required
+        />
+      </div>
+
+      <div class="registration-form__field">
+        <label for="studentEmail">College email</label>
+        <input
+          type="email"
+          id="studentEmail"
+          name="studentEmail"
+          placeholder="name@algonquincollege.com"
+          required
+        />
+      </div>
+
+      <div class="registration-form__field">
+        <label for="studentPhone">Phone number</label>
+        <input
+          type="tel"
+          id="studentPhone"
+          name="studentPhone"
+          placeholder="613-555-0123"
+        />
+      </div>
+    </fieldset>
+
+    <fieldset class="registration-form__section">
+      <legend>Program and Services</legend>
+
+      <div class="registration-form__field">
+        <label for="preferredProgram">Program</label>
+        <select id="preferredProgram" name="preferredProgram" required>
+          <option value="">Choose a program</option>
+          <option value="mobile-dev">
+            Mobile Application Design and Development
+          </option>
+          <option value="web-dev">Web Development</option>
+          <option value="business">Business</option>
+        </select>
+      </div>
+
+      <fieldset class="registration-form__section">
+        <legend>Account and Credits</legend>
+
+        <div class="registration-form__field">
+          <label for="studentNumber">Student number</label>
+          <input
+            type="number"
+            id="studentNumber"
+            name="studentNumber"
+            min="100000"
+            max="999999999"
+            placeholder="e.g. 123456"
+            required
+          />
+        </div>
+
+        <div class="registration-form__field">
+          <label for="studentPassword">Create a password</label>
+          <input
+            type="password"
+            id="studentPassword"
+            name="studentPassword"
+            minlength="8"
+            placeholder="At least 8 characters"
+            required
+          />
+        </div>
+      </fieldset>
+
+      <fieldset class="registration-form__group">
+        <legend>Preferred session</legend>
+        <label
+          ><input type="radio" name="sessionTime" value="morning" />
+          Morning</label
+        >
+        <label
+          ><input type="radio" name="sessionTime" value="afternoon" />
+          Afternoon</label
+        >
+        <label
+          ><input type="radio" name="sessionTime" value="evening" />
+          Evening</label
+        >
+      </fieldset>
+
+      <fieldset class="registration-form__group">
+        <legend>Services of interest</legend>
+        <label
+          ><input type="checkbox" name="services" value="clubs" /> Clubs</label
+        >
+        <label
+          ><input type="checkbox" name="services" value="workshops" />
+          Workshops</label
+        >
+        <label
+          ><input type="checkbox" name="services" value="events" />
+          Events</label
+        >
+      </fieldset>
+
+      <div class="registration-form__field">
+        <label for="startDate">Preferred start date</label>
+        <input type="date" id="startDate" name="startDate" />
+      </div>
+
+      <div class="registration-form__field">
+        <label for="goals">Tell us your goals</label>
+        <textarea
+          id="goals"
+          name="goals"
+          rows="4"
+          placeholder="A sentence or two is fine."
+        ></textarea>
+      </div>
+    </fieldset>
+
+    <div class="registration-form__actions">
+      <button type="submit">Submit registration</button>
+    </div>
+  </form>
+</main>
