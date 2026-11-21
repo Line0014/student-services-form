@@ -130,3 +130,19 @@ main {
 .registration-form__group {
   padding-top: 0.25rem;
 }
+
+.registration-form__section {
+  gap: 1.25rem;
+}
+
+.registration-form__section .registration-form__section {
+  margin-top: 0.5rem;
+}
+
+.registration-form__group {
+  margin-top: 0.5rem;
+}
+
+.registration-form__field + .registration-form__field {
+  margin-top: 0.25rem;
+}
