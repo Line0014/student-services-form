@@ -70,35 +70,39 @@
               <option value="business">Business</option>
             </select>
           </div>
+        </fieldset>
 
-          <fieldset class="registration-form__section">
-            <legend>Account and Credits</legend>
+        <fieldset class="registration-form__section">
+          <legend>Account and Credits</legend>
 
-            <div class="registration-form__field">
-              <label for="studentNumber">Student number</label>
-              <input
-                type="number"
-                id="studentNumber"
-                name="studentNumber"
-                min="100000"
-                max="999999999"
-                placeholder="e.g. 123456"
-                required
-              />
-            </div>
+          <div class="registration-form__field">
+            <label for="studentNumber">Student number</label>
+            <input
+              type="number"
+              id="studentNumber"
+              name="studentNumber"
+              min="100000"
+              max="999999999"
+              placeholder="e.g. 123456"
+              required
+            />
+          </div>
 
-            <div class="registration-form__field">
-              <label for="studentPassword">Create a password</label>
-              <input
-                type="password"
-                id="studentPassword"
-                name="studentPassword"
-                minlength="8"
-                placeholder="At least 8 characters"
-                required
-              />
-            </div>
-          </fieldset>
+          <div class="registration-form__field">
+            <label for="studentPassword">Create a password</label>
+            <input
+              type="password"
+              id="studentPassword"
+              name="studentPassword"
+              minlength="8"
+              placeholder="At least 8 characters"
+              required
+            />
+          </div>
+        </fieldset>
+
+        <fieldset class="registration-form__section">
+          <legend>Course Preferences</legend>
 
           <fieldset class="registration-form__group">
             <legend>Preferred session</legend>
