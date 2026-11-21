@@ -146,3 +146,13 @@ main {
 .registration-form__field + .registration-form__field {
   margin-top: 0.25rem;
 }
+
+.registration-form__section .registration-form__section legend {
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+
+.registration-form__section .registration-form__section {
+  padding: 0;
+  margin-top: 0.5rem;
+}
