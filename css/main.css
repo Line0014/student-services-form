@@ -115,3 +115,18 @@ main {
   outline: 3px solid var(--color-header);
   outline-offset: 2px;
 }
+
+.registration-form__section .registration-form__section {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.registration-form__group legend {
+  padding: 0;
+  margin-bottom: 0.35rem;
+}
+
+.registration-form__group {
+  padding-top: 0.25rem;
+}
